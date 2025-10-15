@@ -4,14 +4,67 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Contact</title>
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/contact_styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Faster+One&family=IBM+Plex+Sans+JP&family=Kadwa:wght@400;700&family=Kosugi+Maru&family=Racing+Sans+One&display=swap" rel="stylesheet" />
     </head>
 
     <body>
+        <div class="header">
+            <div class="brand">
+                <h3 class="logo">
+                <span>ジュ</span>
+                <span>ール</span>
+                </h3>
+                <h3 class="logo-text">Joulz</h3>
+            </div>
+            
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#index.html" class="nav-button">Home</a></li>
+                    <li><a href="#about.html" class="nav-button">About</a></li>
+                    <li><a href="#shop.html" class="nav-button">Shop</a></li>
+                    <li><a href="#garage.html" class="nav-button">Garage</a></li>
+                    <li><a href="#contact.html" class="nav-button">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
 
+        <div class="hero-wrapper">
+            <div class="hero-img"></div>
+            <p>Store Location</p>
+            <p>Joulz,</p>
+            <p>Tuning Upgrades</p>
+            <p>and Repair Services</p>
+            <p>1-2-3 Sakura-dōri, JP-150-0001 Shibuya (Tokyo)</p>
+            <p>Phone: +63 968-683-8529</p>
+        </div>
+
+        <main>
+            <div class="form">
+                <div class="form-header">
+                    <p>Tell us about your vehicle to get started with your repair.<br/></p>
+                    <h2>Customer Form</h2>
+                </div>
+
+                <div class="details">
+                    <form>
+                        <label for="name">Name:</label><br/>
+                        <input type="text" id="name" name="name"><br/>
+                        <label for="email">Email:</label><br/>
+                        <input type="email" id="email" name="email"><br/>
+                        <label for="phone">Phone Number</label><br/>
+                        <input type="number" id="phone" name="phone"><br/>
+                        <label for="vehicle">Vehicle Model</label><br/>
+                        <input type="text" id="vehicle" name="vehicle"><br/>
+                        <label for="questions">Questions:</label><br/>
+                        <textarea id="questions" name="questions"></textarea><br/>
+                        <div class="submit-container">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
     </body>
-
-    <footer>
-
-    </footer>
-
 </html>
