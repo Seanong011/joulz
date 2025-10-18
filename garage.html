@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
@@ -81,5 +81,99 @@
                 </div>
             </div>
         </footer>
+        <script src="script/garage.js"></script>
     </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Garage</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/garage_styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Faster+One&family=IBM+Plex+Sans+JP&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kadwa:wght@400;700&family=Kosugi+Maru&family=Orbitron:wght@400..900&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Genos:ital,wght@0,100..900;1,100..900&family=Gruppo&family=Hubballi&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="brand">
+            <h3 class="logo">
+                <span>ジュ</span>
+                <span>ール</span>
+            </h3>
+            <h3 class="logo-text">Joulz</h3>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#index.html" class="nav-button">Home</a></li>
+                <li><a href="#about.html" class="nav-button">About</a></li>
+                <li><a href="#shop.html" class="nav-button">Shop</a></li>
+                <li><a href="#garage.html" class="nav-button">Garage</a></li>
+                <li><a href="#contact.html" class="nav-button">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <div id="featured">
+            <h2 id="ft">FEATURED</h2>
+            <h2 id="rx">RX-7 FD 1992</h2>
+            <h1 id="mazda">MAZDA</h1>
+            <hr id="bar">
+        </div>
+
+        <div id="motorsport">
+            <h1>MOTORSPORT LINE</h1>
+            <img src="img/icons/details-icon.svg" alt="details icon" class="detail-button" data-index="0">
+        </div>
+
+        <div id="skyline">
+            <h1>SKYLINE R-34</h1>
+            <img src="img/icons/details-icon.svg" alt="details icon" class="detail-button" data-index="1">
+        </div>
+
+        <div id="honda">
+            <h1>Honda</h1>
+            <img src="img/icons/details-icon.svg" alt="details icon" class="detail-button" data-index="2">
+            <h1>S2000</h1>
+        </div>
+
+        <div id="supra">
+            <h1>SUPRA</h1>
+            <img src="img/icons/details-icon.svg" alt="details icon" class="detail-button" data-index="3">
+        </div>
+    </main>
+
+    <!-- Modal Popup -->
+    <div id="image-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img id="modal-image" src="" alt="Showcase">
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-wrapper">
+            <div class="socials-section">
+                <hr>
+                <div class="socials">
+                    <h1>FACEBOOK</h1>
+                    <h1>YOUTUBE</h1>
+                    <h1>INSTAGRAM</h1>
+                </div>
+                <hr>
+            </div>
+            <div class="joulz">
+                <p>Joulz Inc. - A company under Japanese law, having its registered office at 1-2-3 Sakura-dōri, JP-150-0001</p>
+                <p>Shibuya (Tokyo), Japan, registered with the Companies Register of Tokyo.</p>
+            </div>
+            <div class="copyright">
+                <p>Copyright 2025 - All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script/garage.js"></script>
+</body>
 </html>
