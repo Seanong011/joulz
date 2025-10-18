@@ -235,3 +235,18 @@ footer h1 {
     color: #FFF;
     font-family: 'Kosugi Maru', sans-serif;
 }
+
+/* ANIMATION STYLES */
+
+input[type="submit"] {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    transform: translateY(-5px);
+}
+
+input[type="submit"]:active {
+    transform: translateY(0);
+}
