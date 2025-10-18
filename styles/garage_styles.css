@@ -151,7 +151,6 @@ html, body {
 #supra img {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
     bottom: 15px;
 }
 
@@ -269,3 +268,88 @@ footer h1 {
     font-family: 'Kosugi Maru', sans-serif;
 }
 
+/* ANIMATIONS STYLES */
+#motorsport img,
+#skyline img,
+#honda img,
+#supra img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 15px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+#motorsport img:hover,
+#skyline img:hover,
+#honda img:hover,
+#supra img:hover {
+    transform: translateX(-50%) translateY(-5px);
+}
+
+#motorsport img:active,
+#skyline img:active,
+#honda img:active,
+#supra img:active {
+    transform: translateX(-50%) translateY(0);
+}
+
+/* MODAL POPUP STYLES */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    animation: fadeIn 0.3s ease;
+}
+
+.modal.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    animation: zoomIn 0.3s ease;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.close-modal {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-modal:hover {
+    color: #5FB3EB;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.8); }
+    to { transform: scale(1); }
+}

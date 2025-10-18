@@ -48,6 +48,8 @@
     font-family: 'IBM Plex Sans JP', sans-serif;
 }
 
+/* NAVIGATION ANIMATIONS */
+
 .nav-links {
     list-style: none;
     display: flex;
@@ -57,9 +59,53 @@
 }
 
 .nav-links a {
-    text-decoration: none;
-    font-size: 1.56em;
-    color: black;
-    font-family: 'Kadwa', sans-serif;
-    font-weight: bold;
+  position: relative;
+  text-decoration: none;
+  font-family: 'Kadwa', sans-serif;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: red;
+  transition: width 0.3s ease; 
+}
+
+.nav-links a:hover {
+  color: red;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* FOOTER ANIMATIONS */
+
+.socials h1 {
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.socials h1:hover {
+  opacity: 1;
+  transform: translateY(-5px);
+}
+
+.socials h1:nth-child(1):hover {
+  color: #1877F2;
+}
+
+.socials h1:nth-child(2):hover {
+  color: #FF0050;
+}
+
+.socials h1:nth-child(3):hover {
+  color: #E1306C;
+}
+
