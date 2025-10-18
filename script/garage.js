@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
         "img/showcase-1.png",
         "img/showcase-2.png",
         "img/showcase-3.png",
-        "img/showcase-4.png"
+        "img/showcase-4.png",
+        "img/showcase-5.png"
     ];
 
     const modal = document.getElementById("image-modal");
