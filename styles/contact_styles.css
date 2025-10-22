@@ -250,3 +250,353 @@ input[type="submit"]:hover {
 input[type="submit"]:active {
     transform: translateY(0);
 }
+
+/* TABLET RESPONSIVE STYLES */
+@media screen and (min-width: 630px) and (max-width: 1180px) {
+    .header {
+        padding: 1em 1.5rem;
+    }
+    
+    .logo {
+        font-size: 2em;
+    }
+    
+    .logo-text {
+        font-size: 4em;
+    }
+    
+    .nav-links {
+        gap: 1em;
+    }
+    
+    .nav-links a {
+        font-size: 1.2em;
+    }
+    
+    .hero-wrapper p {
+        padding-left: 100px;
+    }
+    
+    .hero-wrapper p:first-of-type {
+        top: 280px;
+        font-size: 25px;
+    }
+    
+    .hero-wrapper p:nth-of-type(2),
+    .hero-wrapper p:nth-of-type(3),
+    .hero-wrapper p:nth-of-type(4) {
+        font-size: 50px;
+    }
+    
+    .hero-wrapper p:nth-of-type(2) {
+        top: 320px;
+    }
+    
+    .hero-wrapper p:nth-of-type(3) {
+        top: 370px;
+    }
+    
+    .hero-wrapper p:nth-of-type(4) {
+        top: 420px;
+    }
+    
+    .hero-wrapper p:nth-of-type(5),
+    .hero-wrapper p:nth-of-type(6) {
+        font-size: 18px;
+    }
+    
+    .hero-wrapper p:nth-of-type(5) {
+        bottom: 120px;
+    }
+    
+    .hero-wrapper p:nth-of-type(6) {
+        bottom: 95px;
+    }
+    
+    .form {
+        padding: 25px;
+    }
+    
+    .form-header p {
+        font-size: 18px;
+    }
+    
+    .form-header h2 {
+        font-size: 30px;
+    }
+    
+    .details label {
+        font-size: 22px;
+    }
+    
+    .details input[type="submit"] {
+        width: 140px;
+        height: 50px;
+        font-size: 22px;
+    }
+    
+    footer {
+        height: 23rem;
+    }
+    
+    .socials-section {
+        height: 11rem;
+        gap: 2.5em;
+    }
+    
+    .socials {
+        gap: 1em;
+    }
+    
+    footer h1 {
+        font-size: 1.5em;
+    }
+    
+    .joulz p,
+    .copyright p {
+        font-size: 0.9em;
+        padding: 0 2em;
+    }
+}
+
+/* Smaller tablets */
+
+@media screen and (min-width: 630px) and (max-width: 768px) {
+    .logo {
+        font-size: 1.6em;
+    }
+    
+    .logo-text {
+        font-size: 3.2em;
+    }
+    
+    .nav-links a {
+        font-size: 1em;
+    }
+    
+    .hero-wrapper p {
+        padding-left: 80px;
+    }
+    
+    .hero-wrapper p:first-of-type {
+        top: 260px;
+        font-size: 22px;
+    }
+    
+    .hero-wrapper p:nth-of-type(2),
+    .hero-wrapper p:nth-of-type(3),
+    .hero-wrapper p:nth-of-type(4) {
+        font-size: 42px;
+    }
+    
+    .hero-wrapper p:nth-of-type(2) {
+        top: 295px;
+    }
+    
+    .hero-wrapper p:nth-of-type(3) {
+        top: 340px;
+    }
+    
+    .hero-wrapper p:nth-of-type(4) {
+        top: 385px;
+    }
+    
+    .hero-wrapper p:nth-of-type(5),
+    .hero-wrapper p:nth-of-type(6) {
+        font-size: 16px;
+    }
+    
+    .hero-wrapper p:nth-of-type(5) {
+        bottom: 110px;
+    }
+    
+    .hero-wrapper p:nth-of-type(6) {
+        bottom: 88px;
+    }
+    
+    .form-header p {
+        font-size: 16px;
+    }
+    
+    .form-header h2 {
+        font-size: 26px;
+    }
+    
+    .details label {
+        font-size: 20px;
+    }
+    
+    footer h1 {
+        font-size: 1.2em;
+    }
+}
+
+/* Medium to larger tablets */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .hero-wrapper p {
+        padding-left: 120px;
+    }
+    
+    .hero-wrapper p:first-of-type {
+        top: 300px;
+        font-size: 28px;
+    }
+    
+    .hero-wrapper p:nth-of-type(2),
+    .hero-wrapper p:nth-of-type(3),
+    .hero-wrapper p:nth-of-type(4) {
+        font-size: 55px;
+    }
+    
+    .hero-wrapper p:nth-of-type(2) {
+        top: 345px;
+    }
+    
+    .hero-wrapper p:nth-of-type(3) {
+        top: 400px;
+    }
+    
+    .hero-wrapper p:nth-of-type(4) {
+        top: 455px;
+    }
+    
+    .hero-wrapper p:nth-of-type(5),
+    .hero-wrapper p:nth-of-type(6) {
+        font-size: 19px;
+    }
+    
+    .hero-wrapper p:nth-of-type(5) {
+        bottom: 128px;
+    }
+    
+    .hero-wrapper p:nth-of-type(6) {
+        bottom: 102px;
+    }
+}
+
+/* MOBILE RESPONSIVE STYLES */
+@media screen and (max-width: 629px) {
+    .header {
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        padding: 1em;
+        gap: 1em;
+        background-color: #fff;
+        border-bottom: 2px solid #000;
+    }
+    
+    .brand {
+        justify-content: center;
+    }
+    
+    .logo {
+        font-size: 1.5em;
+    }
+    
+    .logo-text {
+        font-size: 2.5em;
+    }
+    
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .nav-links {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.5em 1em;
+        padding: 0;
+    }
+    
+    .nav-links a {
+        font-size: 0.9em;
+    }
+    
+    .hero-wrapper p {
+        display: none;
+    }
+    
+    main {
+        padding: 15px;
+    }
+    
+    .form {
+        padding: 20px;
+    }
+    
+    .form-header p {
+        font-size: 14px;
+    }
+    
+    .form-header h2 {
+        font-size: 24px;
+        margin-top: 10px;
+    }
+    
+    .details {
+        margin-top: 20px;
+    }
+    
+    .details label {
+        font-size: 18px;
+    }
+    
+    .details input[type="text"],
+    .details input[type="email"],
+    .details input[type="number"] {
+        height: 28px;
+    }
+    
+    .details textarea {
+        height: 200px;
+        margin-bottom: 20px;
+    }
+    
+    .details input[type="submit"] {
+        width: 130px;
+        height: 45px;
+        font-size: 20px;
+    }
+    
+    footer {
+        height: auto;
+        min-height: 18rem;
+        padding: 2em 0;
+    }
+    
+    .socials-section {
+        height: auto;
+        gap: 2em;
+        padding: 1em 0;
+    }
+    
+    .socials {
+        flex-direction: column;
+        gap: 0.8em;
+    }
+    
+    footer h1 {
+        font-size: 1em;
+    }
+    
+    .joulz {
+        text-align: center;
+        margin-top: 1em;
+    }
+    
+    .joulz p,
+    .copyright p {
+        font-size: 0.75em;
+        padding: 0 1.5em;
+        text-align: center;
+    }
+    
+    .copyright {
+        text-align: center;
+    }
+}

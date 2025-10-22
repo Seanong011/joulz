@@ -22,7 +22,7 @@ html, body {
     left: 0;
     width: 100%;
     background: transparent;
-    z-index: 10
+    z-index: 10;
 }
 
 .brand {
@@ -113,7 +113,7 @@ html, body {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 42px;
+    height: 2.625rem; 
     border-top: 1px solid black;
     border-bottom: none;
     background-color: var(--mblue);
@@ -122,25 +122,25 @@ html, body {
 
 #ft {
     position: absolute;
-    left: 45px;
-    bottom: 5px;
-    font-size: 140px;
+    left: 2.8125rem; 
+    bottom: 0.3125rem; 
+    font-size: 8.75rem; 
     font-weight: 700;
     z-index: 1;
 }
 
 #rx {
     position: absolute;
-    right: 272px;
-    bottom: 130px;
-    font-size: 75px;
+    right: 17rem; 
+    bottom: 8.125rem;
+    font-size: 4.6875rem;
 }
 
 #mazda {
     position: absolute;
-    right: 30px;
-    bottom: -20px;
-    font-size: 220px;
+    right: 1.875rem;
+    bottom: -1.25rem;
+    font-size: 13.75rem;
 }
 
 /* ELEMENTS STYLES */
@@ -151,7 +151,7 @@ html, body {
 #supra img {
     position: absolute;
     left: 50%;
-    bottom: 15px;
+    bottom: 0.9375rem;
 }
 
 #motorsport h1,
@@ -160,7 +160,7 @@ html, body {
 #supra h1 {
     color: #FFF;
     opacity: 0.65;
-    font-size: 50px;
+    font-size: 3.125rem;
 }
 
 #motorsport h1 {
@@ -168,14 +168,14 @@ html, body {
     transform: rotate(-8deg);
     font-family: 'Gruppo', sans-serif;
     font-weight: 100;
-    right: 40px;
-    bottom: 60px;
+    right: 2.5rem;
+    bottom: 3.75rem;
 }
 
 #skyline h1 {
     position: absolute;
-    top: 60px;
-    left: 40px;
+    top: 3.75rem;
+    left: 2.5rem;
     font-family: 'Aboreto', sans-serif;
     font-weight: 200;
 }
@@ -185,27 +185,28 @@ html, body {
     position: absolute;
     font-family: 'Hubballi', sans-serif;
     font-weight: 200;
-    top: 195px;
+    top: 12.1875rem;
 }
 
 #honda h1:first-of-type {
-    left: 240px;
+    left: 15rem;
 }
 
 #honda h1:last-of-type {
-    right: 190px;
+    right: 11.875rem;
 }
 
 #supra h1 {
-    right: 350px;
-    top: 100px;
+    right: 21.875rem;
+    top: 6.25rem; 
 }
 
 /* FOOTER STYLES */
+
 footer {
     flex-shrink: 0;
     width: 100%;
-    height: 400px;
+    height: 25rem;
     background-color: var(--footer-background);
     padding: 1.5em 0;
     position: relative;
@@ -225,7 +226,7 @@ footer {
 .socials-section {
     position: relative;
     width: 100%;
-    height: 200px;
+    height: 12.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -269,6 +270,7 @@ footer h1 {
 }
 
 /* ANIMATIONS STYLES */
+
 #motorsport img,
 #skyline img,
 #honda img,
@@ -276,7 +278,7 @@ footer h1 {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 15px;
+    bottom: 0.9375rem;
     transition: transform 0.3s ease;
     cursor: pointer;
 }
@@ -296,6 +298,7 @@ footer h1 {
 }
 
 /* MODAL POPUP STYLES */
+
 .modal {
     display: none;
     position: fixed;
@@ -352,4 +355,171 @@ footer h1 {
 @keyframes zoomIn {
     from { transform: scale(0.8); }
     to { transform: scale(1); }
+}
+
+/* TABLET RESPONSIVE STYLES */
+@media screen and (min-width: 630px) and (max-width: 1180px) {
+    .header {
+        padding: 1em 1.5rem;
+    }
+    
+    .logo {
+        font-size: 2em;
+    }
+    
+    .logo-text {
+        font-size: 4em;
+    }
+    
+    .nav-links {
+        gap: 1em;
+    }
+    
+    .nav-links a {
+        font-size: 1.2em;
+    }
+    
+    #ft,
+    #rx,
+    #mazda,
+    #bar,
+    #motorsport h1,
+    #skyline h1,
+    #honda h1,
+    #supra h1 {
+        display: none;
+    }
+    
+    footer {
+        height: 23rem;
+    }
+    
+    .socials-section {
+        height: 11rem;
+        gap: 2.5em;
+    }
+    
+    .socials {
+        gap: 1em;
+    }
+    
+    footer h1 {
+        font-size: 1.5em;
+    }
+    
+    .joulz p,
+    .copyright p {
+        font-size: 0.9em;
+        padding: 0 2em;
+    }
+}
+
+/* Smaller tablets */
+@media screen and (min-width: 630px) and (max-width: 768px) {
+    .logo {
+        font-size: 1.6em;
+    }
+    
+    .logo-text {
+        font-size: 3.2em;
+    }
+    
+    .nav-links a {
+        font-size: 1em;
+    }
+    
+    footer h1 {
+        font-size: 1.2em;
+    }
+}
+
+/* MOBILE RESPONSIVE STYLES */
+@media screen and (max-width: 629px) {
+    .header {
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        padding: 1em;
+        gap: 1em;
+        background-color: #fff;
+        border-bottom: 2px solid #000;
+    }
+    
+    .brand {
+        justify-content: center;
+    }
+    
+    .logo {
+        font-size: 1.5em;
+    }
+    
+    .logo-text {
+        font-size: 2.5em;
+    }
+    
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .nav-links {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.5em 1em;
+        padding: 0;
+    }
+    
+    .nav-links a {
+        font-size: 0.9em;
+    }
+
+    #ft,
+    #rx,
+    #mazda,
+    #bar,
+    #motorsport h1,
+    #skyline h1,
+    #honda h1,
+    #supra h1 {
+        display: none;
+    }
+    
+    footer {
+        height: auto;
+        min-height: 18rem;
+        padding: 2em 0;
+    }
+    
+    .socials-section {
+        height: auto;
+        gap: 2em;
+        padding: 1em 0;
+    }
+    
+    .socials {
+        flex-direction: column;
+        gap: 0.8em;
+    }
+    
+    footer h1 {
+        font-size: 1em;
+    }
+    
+    .joulz {
+        text-align: center;
+        margin-top: 1em;
+    }
+    
+    .joulz p,
+    .copyright p {
+        font-size: 0.75em;
+        padding: 0 1.5em;
+        text-align: center;
+    }
+    
+    .copyright {
+        text-align: center;
+    }
 }
